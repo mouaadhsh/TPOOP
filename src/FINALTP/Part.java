@@ -2,7 +2,7 @@ package FINALTP;
 
 public class Part {
     private String Name;
-    private int timeofmanufacture;
+    private final int timeofmanufacture;
 
     public Part(String name, int timeofmanufacture) {
         this.Name = name;

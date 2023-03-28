@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class CompoundParts extends Part {
 
-    private ArrayList<Part> listofparts = new ArrayList<>();
+    private final ArrayList<Part> listofparts = new ArrayList<>();
     private int assembleTime ;
     public CompoundParts(String Name) {
         super(Name, 0);
