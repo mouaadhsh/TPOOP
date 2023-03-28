@@ -5,12 +5,13 @@ public class Test {
         Part Gpu = new Part("Rtx2070",20);
         Part Cpu = new Part("i913th13900k",50);
         Part Ram = new Part("16GBRAM",30);
+        System.out.println(Gpu.getName());
 
         CompoundParts PC = new CompoundParts("GamingPC");
         PC.add(Gpu);
         PC.add(Cpu);
         PC.add(Ram);
-
-        System.out.println(PC.getTimeofmanufacture());
+        PC.displayParts();
+        System.out.println("Compound Part name:"+PC.getName()+" Compound Part time of manufacture:"+PC.getTimeofmanufacture());
     }
 }

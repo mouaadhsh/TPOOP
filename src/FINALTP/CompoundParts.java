@@ -3,7 +3,7 @@ package FINALTP;
 import javax.lang.model.element.Name;
 import java.util.ArrayList;
 
-public class CompoundParts extends Part{
+public class CompoundParts {
     private String Name;
 
     private  int timeofmanufacture;
@@ -18,18 +18,22 @@ public class CompoundParts extends Part{
         this.Name = name;
         this.timeofmanufacture = 0;
     }
+    public void displayParts(){
+        for (int i = 0; i < this.listofparts.size(); i++) {
+            System.out.println("part Name"+this.listofparts.get(i).getName() +" Manufacture time:"+ this.listofparts.get(i).getTimeofmanufacture());
+        }
+    }
 
-    @Override
     public void setName(String name) {
         Name = name;
     }
 
-    @Override
+
     public String getName() {
-        return Name;
+        return this.Name;
     }
 
-    @Override
+
     public int getTimeofmanufacture() {
         return timeofmanufacture;
     }
