@@ -2,7 +2,7 @@ package FINALTP;
 
 public class Part {
     private String Name;
-    private final int timeofmanufacture;
+    private int timeofmanufacture;
 
     public Part(String name, int timeofmanufacture) {
         this.Name = name;
@@ -12,10 +12,16 @@ public class Part {
     public String getName() {
         return this.Name;
     }
+
     public void setName(String name) {
-        this.Name = name;
+        Name = name;
     }
-    public int fabTime(){
+
+    public void setTimeofmanufacture(int timeofmanufacture) {
+        this.timeofmanufacture = timeofmanufacture;
+    }
+
+    public int fabTime() {
         return timeofmanufacture;
     }
 }
