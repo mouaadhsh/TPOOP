@@ -12,6 +12,6 @@ public class Test {
         PC.add(Cpu);
         PC.add(Ram);
         PC.displayParts();
-        System.out.println("Compound Part name:"+PC.getName()+" Compound Part time of manufacture:"+PC.getTimeofmanufacture());
+        System.out.println("Compound Part name:"+PC.getName()+" Compound Part time of manufacture:"+PC.fabTime());
     }
 }
